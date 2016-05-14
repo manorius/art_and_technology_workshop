@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1440">
+<PageBlocks>
+<Block genus-name="df_capacitive_touch_sensor" id="772">
+<Location>
+<X>464</X>
+<Y>867</Y>
+</Location>
+<Plug>
+<BlockConnector connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="773" connector-kind="socket" connector-type="number" init-type="number" label="pin#" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="773">
+<Location>
+<X>686</X>
+<Y>867</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="772" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="loop" id="370">
+<Location>
+<X>262</X>
+<Y>416</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="variable_digital" id="381">
+<Label>detect</Label>
+<Location>
+<X>687</X>
+<Y>291</Y>
+</Location>
+<Plug>
+<BlockConnector connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="variable_digital" id="376">
+<Label>detect</Label>
+<Location>
+<X>763</X>
+<Y>196</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="375" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="seeed_pir_motion_sensor" id="373">
+<Location>
+<X>956</X>
+<Y>220</Y>
+</Location>
+<Plug>
+<BlockConnector connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="374" connector-kind="socket" connector-type="number" init-type="number" label="pin#" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="374">
+<Location>
+<X>1136</X>
+<Y>220</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="373" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="digital-high" id="377">
+<Location>
+<X>942</X>
+<Y>81</Y>
+</Location>
+<Plug>
+<BlockConnector connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
