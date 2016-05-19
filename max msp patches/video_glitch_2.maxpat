@@ -38,24 +38,10 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 403.0, 229.0, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "bball.mov",
+								"filename" : "Macintosh HD:/Users/manolis.perrakis/Downloads/Elmo.mp4",
 								"filekind" : "moviefile",
-								"selection" : [ 0.144231, 0.855769 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
@@ -92,13 +78,26 @@
  ]
 					}
 ,
-					"id" : "obj-27",
+					"id" : "obj-9",
 					"maxclass" : "jit.playlist",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 103.0, 293.0, 150.0, 30.0 ],
+					"patching_rect" : [ 103.0, 275.0, 150.0, 30.0 ],
 					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 403.0, 229.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
 				}
 
 			}
@@ -189,7 +188,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 585.0, 451.5, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "150"
+					"text" : "60"
 				}
 
 			}
@@ -228,7 +227,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 643.5, 496.0, 70.0, 22.0 ],
 					"style" : "",
-					"text" : "dim 150 $1"
+					"text" : "dim 100 $1"
 				}
 
 			}
@@ -241,7 +240,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 643.5, 407.0, 32.0, 22.0 ],
 					"style" : "",
-					"text" : "* 50"
+					"text" : "* 20"
 				}
 
 			}
@@ -289,7 +288,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 165.5, 460.5, 258.0, 130.0 ],
+					"patching_rect" : [ 166.5, 460.5, 258.0, 130.0 ],
 					"prototypename" : "pixl",
 					"varname" : "fractalizr",
 					"viewvisibility" : 1
@@ -356,7 +355,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 326.0, 695.533691, 78.0, 68.0 ]
+					"patching_rect" : [ 247.0, 672.533691, 78.0, 68.0 ]
 				}
 
 			}
@@ -385,6 +384,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -435,7 +443,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
+					"destination" : [ "obj-16", 4 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
@@ -444,10 +452,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-16", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-27", 0 ]
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -541,6 +549,15 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-16::obj-16" : [ "horizontal[4]", "horizontal", 0 ],
@@ -579,9 +596,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bball.mov",
-				"bootpath" : "C74:/media/jitter",
-				"type" : "MooV",
+				"name" : "Elmo.mp4",
+				"bootpath" : "~/Downloads",
+				"type" : "mpg4",
 				"implicit" : 1
 			}
  ],

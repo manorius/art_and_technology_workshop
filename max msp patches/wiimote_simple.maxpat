@@ -1110,13 +1110,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "prophet-Kick-2-Reverb.wav",
-				"bootpath" : "~/Documents/Repos/art_and_technology_workshop/max msp patches/sounds/Prophet",
+				"bootpath" : "~/.Trash/Prophet",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "prophet-Snare.wav",
-				"bootpath" : "~/Documents/Repos/art_and_technology_workshop/max msp patches/sounds/Prophet",
+				"bootpath" : "~/.Trash/Prophet",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
